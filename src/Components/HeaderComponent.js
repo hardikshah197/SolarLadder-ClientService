@@ -59,17 +59,17 @@ export default function Header() {
             </AppBar>
             <Toolbar>
                 <Typography variant="h6" color="primary" noWrap>
-                    <Button style={{color:"blue"}} onClick={() => window.open('http://localhost:3000/inventry', '_self')} >
+                    <Button style={{color:"blue"}} onClick={() => window.open(`${process.env.REACT_APP_LOCAL_URL}/inventry`, '_self')} >
                         Add Inventry
                     </Button>
                 </Typography>
                 <Typography variant="h6" color="inherit" noWrap>
-                    <Button style={{color:"blue"}} onClick={() => window.open('http://localhost:3000/item', '_self')}>
+                    <Button style={{color:"blue"}} onClick={() => window.open(`${process.env.REACT_APP_LOCAL_URL}/item`, '_self')}>
                         Add Item
                     </Button>
                 </Typography>
                 <Typography variant="h6" color="inherit" noWrap>
-                    <Button style={{marginLeft:1500,color:"blue"}} onClick={() => window.open('http://localhost:3000/', '_self')} >
+                    <Button style={{marginLeft:1500,color:"blue"}} onClick={() => window.open(`${process.env.REACT_APP_LOCAL_URL}`, '_self')} >
                         Dashboard
                     </Button>
                 </Typography>
